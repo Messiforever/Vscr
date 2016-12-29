@@ -1,0 +1,279 @@
+@font-face {
+    font-family:icon-font;
+    src:url(../fonts/glyphicons-halflings-regular.woff);
+}
+body{
+    margin:0;
+    padding:0;
+    color:#fff;
+    font-family:icon-font;
+}
+*{
+    box-sizing:border-box;
+}
+a{
+    text-decoration:none;
+}
+.container{
+    width:100vw;
+    height:100vh;
+    position:relative;
+    background-image:url(../images/bj.png);
+    background-size:cover;
+    background-position:center center;
+}
+.content{
+    width:100vw;
+    height:100vh;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1;
+}
+footer{
+    width:100vw;
+    height:50px;
+    background-color:#000;
+    position:absolute;
+    bottom:0;
+}
+.main-menu{
+    width:70vw;
+    height:70vh;
+    background-color:rgba(0,0,0,0.7);
+    position:absolute;
+    bottom:50px;
+    padding:1vw 1.5vh;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    border:none;
+}
+.main-menu:focus{
+    outline:none;
+}
+.main-menu > div{
+    width:16.5vw;
+    height:15.5vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    user-select:none;
+    /*cursor:pointer;*/
+    background-color:#B61705;
+}
+.main-menu > div.student{
+    background-color:#B61705;
+}
+.main-menu > div.record{
+    background-color:#0086A8;
+}
+.main-menu > div.apply{
+    background-color:#6B00BB;
+}
+.main-menu > div.login{
+    background-color:#BB006B;
+}
+.main-menu > div.performance{
+    background-color:#A66800;
+}
+.main-menu > div.group{
+    background-color:#0113BA;
+}
+.main-menu > div.homework{
+    background-color:#779902;
+}
+.main-menu > div.source-code{
+    background-color:#009747;
+}
+.main-menu > div.course-manage{
+    background-color:#417A62;
+}
+.main-menu > div.prepare-lessons{
+    background-color:#E800BF;
+}
+.main-menu > div.mobile-download{
+    background-color:#01BA95;
+}
+.main-menu > div.message{
+    background-color:#1B5AC5;
+}
+.main-menu > div.settings{
+    background-color:#00A69D;
+}
+.main-menu > div.register{
+    background-color:#279B00;
+}
+.main-menu > div.team{
+    background-color:#3C6A6F;
+}
+.main-menu > div.activity{
+    background-color:#333333;
+}
+.main-menu > div.student > .icon:before{
+  content:'\e008';
+}
+.main-menu > div.record > .icon:before{
+    content:'\e008';
+}
+.main-menu > div.apply > .icon:before{
+    content:'\e105';
+}
+.main-menu > div.login > .icon:before{
+    content:'\e121';
+}
+.main-menu > div.performance > .icon:before{
+    content:'\e139';
+}
+.main-menu > div.group > .icon:before{
+    content:'\e013';
+}
+.main-menu > div.homework > .icon:before{
+    content:'\e111';
+}
+.main-menu > div.source-code > .icon:before{
+    content:'\e171';
+}
+.main-menu > div.course-manage > .icon:before{
+    content:'\e118';
+}
+.main-menu > div.prepare-lessons > .icon:before{
+    content:'\e103';
+}
+.main-menu > div.mobile-download > .icon:before{
+    content:'\e115';
+}
+.main-menu > div.message > .icon:before{
+    content:'\e145';
+}
+.main-menu > div.settings > .icon:before{
+    content:'\e123';
+}
+.main-menu > div.register > .icon:before{
+    content:'\e019';
+}
+.main-menu > div.team > .icon:before{
+    content:'\e135';
+}
+
+.main-menu > div.activity > .icon:before{
+    content:'\e072';
+}
+.login > div {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0,0.4);
+    visibility: hidden;
+    transition: opacity 0.5s;
+    opacity: 0;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+
+}
+.login > div > div{
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    transition: opacity 0.3s,top 0.6s;
+}
+.login > div > div:first-child{
+   opacity: 0;
+    top: -7%;
+}
+/*.login > div > div:last-child{*/
+    /**/
+/*}*/
+.login > div > div form > div:first-child{
+    width: 250px;
+    height: 35px;
+    position: relative;
+    margin-left: 10px;
+
+}
+.login > div > div form > div:last-child{
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    text-align: center;
+}
+.login > div > div form > div:last-child > div{
+    width: 200px;
+    margin: 10px auto;
+
+}
+.login > div > div form > div:nth-child(2){
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    border-radius: 50%;
+    background-color: #7C7F79;
+}
+.login > div > div form > div:nth-child(2) p{
+    width: 30px;
+    height: 30px;
+    margin-top: 0;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+.login > div > div form > div:nth-child(2) p:before{
+    content: "\e014";
+    line-height: 10px;
+    text-align: center;
+    color: white;
+
+}
+.login > div > div:last-child a:hover,.login > div > div:first-child a:hover{
+    color: #7C7F79;
+    cursor: pointer;
+}
+.main-menu > div:hover{
+    border:2px solid #ddd;
+}
+/*.main-menu > div:active{*/
+    /*transform:scale(0.97,0.97);*/
+    /*border:none;*/
+/*}*/
+
+.main-menu > div .icon{
+    font-size:36px;
+}
+.main-menu > label{
+    font-size:36px;
+    font-weight:bold;
+    font-style:italic;
+    position:absolute;
+    bottom:-40px;
+    z-index:1;
+    left:0;
+    cursor:pointer;
+    visibility:visible;
+}
+.main-menu:focus{
+    visibility:visible;
+}
+.gallery{
+    visibility:hidden;
+}
+
+.mobile{
+  display:none !important;
+}
+.pc{
+  display:block !important;
+}
+
+

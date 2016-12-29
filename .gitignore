@@ -1,0 +1,9 @@
+# Created by .ignore support plugin (hsz.mobi)
+/node_modules/
+.idea/Vscr.iml
+.idea/deployment.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/workspace.xml
+node_modules/

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <title>维森凯瑞</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style/index.css">
+  <link rel="stylesheet" media="screen and (min-width:0) and (max-width:650px)"
+        href="style/index-mobile.css">
+  <script src="lib/ionic/js/ionic.bundle.js"></script>
+  <script src="cordova.js"></script>
+</head>
+<body ng-app="starter">
+<div class="container" ng-controller="StarterController">
+  <div class="content">
+    <div class="content-inner">
+      <header>
+      </header>
+      <div class="gallery mobile">
+        <div class="carousel" id="carousel">
+          <img src="images/gallery1.png" alt="gallery1">
+          <img src="images/gallery2.png" alt="gallery2">
+          <img src="images/gallery3.png" alt="gallery3">
+          <img src="images/gallery4.png" alt="gallery4">
+        </div>
+        <div class="gallery-targgles">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <div class="main-menu">
+          <% for(var i = 0; i < result.length; i++){ %>
+
+        <div class=" <%= result[i].enName %>">
+
+          <span class="icon" data-content="\<%= result[i].icon %>"> </span>
+          <span class="title"><%= result[i].title %></span>
+
+        </div>
+          <% } %>
+        <label>vskr</label>
+      </div>
+
+      <div class="mobile">
+        <img src="img/ionic.png" alt="logo" id="pictureCapture">
+        <div id="pictureContainer">
+        </div>
+      </div>
+
+    </div>
+    <footer>
+        <button class="mobile" ng-click="photograph(2)">
+            选择图片
+        </button>
+        <button class="mobile" ng-click="photograph(1)">
+            拍照
+        </button>
+        <button class="mobile" ng-click="scanCode()">
+            扫描二维码
+        </button>
+        <button class="mobile" ng-click="getPosition()">
+            定位
+        </button>
+        <button class="mobile" ng-click="clearImage()">
+            清除
+        </button>
+    </footer>
+  </div>
+</div>
+<script src="js/app.js"></script>
+
+</body>
+</html>
+
+
